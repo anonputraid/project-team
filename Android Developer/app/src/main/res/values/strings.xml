@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">MyFirstAndroidApp</string>
+    <string name="app_name">first project</string>
+    <string name="my_desc">
+        saya bersemangat untuk terus mengeksplorasi dunia mobile, dan bekontribusi pada perkembangan diri saya dimasa depan
+    </string>
+    <string name="about_me">About Me</string>
+    <string name="contact">Contact</string>
+    <string name="skills">Skills</string>
 </resources>

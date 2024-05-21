@@ -1,0 +1,211 @@
+.wrapper-backend {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000e07;
+    font-family: $font-styles-10;
+
+    & .wrapper-wrapper-content {
+        height: 100%;
+        overflow: auto;
+
+        & .wrapper-content {
+            margin: 0 auto 7.32vw auto;
+            width: 40.29vw;
+            height: 100%;
+
+            @include breakpoint-mobile("tablet") {
+                width: 41.17vh;
+            }
+
+            & .navbar {
+                & ul {
+                    display: flex;
+                    list-style: none;
+                    margin: 0.73vw 0;
+                    padding: 0;
+                    gap: 0.73vw;
+                    color: white;
+
+                    @include breakpoint-mobile("tablet") {
+                        margin: 1.17vh 0;
+                        gap: 1.17vh;
+                    }
+
+                    & li {
+                        & a {
+                            text-decoration: none;
+                            color: #ccd0ce;
+                        }
+                    }
+                }
+            }
+
+            & .wrapper-profile {
+                display: flex;
+                align-items: center;
+                gap: 0.73vw;
+                margin-top: 7.32vw;
+
+                @include breakpoint-mobile("tablet") {
+                    gap: 1.17vh;
+                    margin-top: 11.76vh;
+                }
+
+                & .image {
+                    width: 3.66vw;
+                    height: 3.66vw;
+                    background-color: red;
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 50%;
+                    @include breakpoint-mobile("tablet") {
+                        width: 5.88vh;
+                        height: 5.88vh;
+                    }
+                }
+
+                & .user-information {
+                    font-size: $font-size-landscape-p;
+                    @include breakpoint-mobile("tablet") {
+                        font-size: $font-size-portrait-p;
+                    }
+                    & .name {
+                        color: #00e870;
+                    }
+                    & .profesi {
+                        color: #ccd0ce;
+                    }
+                }
+            }
+
+            & .wrapper-card {
+                margin-top: 3.66vw;
+                @include breakpoint-mobile("tablet") {
+                    margin-top: 5.88vh;
+                }
+                & .title {
+                    font-size: $font-size-landscape-h2;
+                    margin-bottom: 1.46vw;
+                    color: #00e870;
+                    font-weight: 600;
+                    @include breakpoint-mobile("tablet") {
+                        margin-bottom: 2.35vh;
+                        font-size: $font-size-portrait-h2;
+                    }
+                }
+
+                & .description {
+                    color: #ccd0ce;
+                }
+
+                & .wrapper-button {
+                    & .btn-green {
+                        & .spinner-grow {
+                            background-color: #00e870;
+                        }
+
+                        & .label {
+                            color: #ccd0ce;
+                        }
+                    }
+                }
+            }
+
+            & .wrapper-connect {
+                margin-top: 4.39vw;
+                @include breakpoint-mobile("tablet") {
+                    margin-top: 7.05vh;
+                }
+                & .title {
+                    font-size: $font-size-landscape-h3;
+                    color: #00e870;
+                    font-weight: 600;
+                    @include breakpoint-mobile("tablet") {
+                        font-size: $font-size-portrait-h3;
+                    }
+                }
+
+                & .wrapper-content-connect {
+                    margin-top: 1.46vw;
+                    display: flex;
+                    gap: 0.73vw;
+
+                    @include breakpoint-mobile("tablet") {
+                        margin-top: 2.35vh;
+                        gap: 1.17vh;
+                    }
+
+                    & .wrapper-item {
+                        padding: 0.73vw 1.46vw 0.73vw 1.46vw;
+                        border-radius: 0.73vw;
+                        background-color: #003d1e;
+                        color: #00e870;
+                        text-decoration: none;
+
+                        @include breakpoint-mobile("tablet") {
+                            padding: 1.17vh 2.35vh 1.17vh 2.35vh;
+                            border-radius: 1.17vh;
+                        }
+                    }
+                }
+            }
+
+            & .wrapper-work {
+                margin-top: 4.39vw;
+                @include breakpoint-mobile("tablet") {
+                    margin-top: 7vh;
+                }
+
+                & .title {
+                    font-size: $font-size-landscape-h3;
+                    color: #00e870;
+                    font-weight: 600;
+                    @include breakpoint-mobile("tablet") {
+                        font-size: $font-size-portrait-h3;
+                    }
+                }
+
+                & .label {
+                    margin: 0.73vw 0 0.73vw 0;
+                    font-size: $font-size-landscape-p;
+                    color: #ccd0ce;
+                    @include breakpoint-mobile("tablet") {
+                        margin: 1.17vh 0 1.17vh 0;
+                        font-size: $font-size-portrait-p;
+                    }
+                }
+
+                & .wrapper-image-android {
+                    background-position: center;
+                    background-size: cover;
+                    width: 36.63vw;
+                    height: 25.64vw;
+                    margin-bottom: 1.46vw;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    @include breakpoint-mobile("tablet") {
+                        width: 100%;
+                        padding-top: 70%;
+                        margin-bottom: 2.35vh;
+                    }
+                }
+                & .wrapper-image-backend {
+                    background-position: center;
+                    background-size: cover;
+                    width: 36.63vw;
+                    height: 29.3vw;
+                    margin-bottom: 1.46vw;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                    @include breakpoint-mobile("tablet") {
+                        width: 100%;
+                        padding-top: 70%;
+                        margin-bottom: 2.35vh;
+                    }
+                }
+            }
+        }
+    }
+}
