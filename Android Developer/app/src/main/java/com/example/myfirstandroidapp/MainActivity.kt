@@ -33,8 +33,8 @@ class MainActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     val teamDetail = response.body()?.detailTeam
                     teamDetail?.let {
-                        val message = "Nama Tim: ${it.nama}, Profesi: ${it.profesi}"
-                        binding.textViewTeamDetail.text = message // Atur teks TextView di sini
+                        binding.detailNama.text    = it.nama
+                        binding.detailProfesi.text = it.profesi
                     }
                 } else {
                     val errorMessage = "Gagal mengambil data: ${response.code()}"
